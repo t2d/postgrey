@@ -13,7 +13,6 @@
     regexp: '^POSTGREY_OPTS='
     line: 'POSTGREY_OPTS="{{ postgrey_opts }}"'
   notify: postgrey restart
-  when: not ansible_check_mode
   tags:
     - postgrey
     - options
